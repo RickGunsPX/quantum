@@ -1,0 +1,113 @@
+
+:root {
+    --color-primario: #FA653E;
+    --color-secundario: #FAA545;
+    --color-terciario: #FA8745;
+    --color-cuaternario: #F54945;
+    --color-quinto: #F5BD45;
+    --color-texto: #333;
+    --color-fondo: #FFF9F0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: var(--color-primario);
+}
+
+p {
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+
+.header {
+    background-color: var(--color-cuaternario);
+    color: white;
+    padding: 2em 0;
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--color-quinto);
+}
+
+
+.auth-buttons {
+    position: absolute; 
+    top: 1em; 
+    right: 2em; 
+}
+
+.auth-buttons a {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.btn-login {
+    background-color: var(--color-secundario);
+}
+
+.btn-register {
+    background-color: var(--color-terciario);
+}
+
+.btn-login:hover {
+    background-color: var(--color-primario); 
+}
+
+.btn-register:hover {
+    background-color: var(--color-cuaternario); 
+}
+
+
+section {
+    margin: 2em 10%;
+    padding: 1.5em;
+    background-color: white;
+    border-left: 8px solid var(--color-secundario);
+    border-radius: 5px;
+}
+
+section h2 {
+    color: var(--color-secundario);
+}
+
+section p {
+    font-size: 1em;
+    color: var(--color-texto);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
+}

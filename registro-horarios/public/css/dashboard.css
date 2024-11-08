@@ -1,0 +1,133 @@
+/* Definir los colores */
+:root {
+    --color-primario: #FA653E;
+    --color-secundario: #FAA545;
+    --color-terciario: #FA8745;
+    --color-cuaternario: #F54945;
+    --color-quinto: #F5BD45;
+    --color-texto: #333;
+    --color-fondo: #FFF9F0;
+}
+
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para la cabecera */
+h2 {
+    color: var(--color-primario);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para contenedores */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de alertas */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+td {
+    background-color: var(--color-quinto);
+}
+
+/* Estilo para formularios dentro de la tabla */
+form {
+    display: inline;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    cursor: pointer;
+}
+
+/* Estilo para opciones seleccionadas */
+select option {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* Estilo de filas de la tabla cuando son seleccionadas */
+tr:nth-child(odd) {
+    background-color: var(--color-terciario);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-quinto);
+}
+
+/* Estilo de las celdas en la tabla */
+td, th {
+    padding: 15px;
+}
+
+/* Hover en las filas de la tabla */
+tr:hover {
+    background-color: var(--color-cuaternario);
+    cursor: pointer;
+}
+
+/* Estilo para la sección de información del usuario */
+.user-info {
+    display: flex;
+    justify-content: space-between; /* Alinear a la izquierda y derecha */
+    align-items: center; /* Centrar verticalmente */
+    margin-bottom: 20px; /* Espacio entre la sección de usuario y el resto */
+}
+
+.user-info p {
+    margin: 0; /* Eliminar margen por defecto */
+}
+
+.user-info button {
+    background-color: var(--color-primario); /* Botón con color primario */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.user-info button:hover {
+    background-color: var(--color-secundario); /* Cambiar color al pasar el mouse */
+}

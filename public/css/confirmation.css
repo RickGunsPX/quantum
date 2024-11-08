@@ -1,0 +1,50 @@
+/* Colores */
+:root {
+    --color-primario: #FA653E;
+    --color-secundario: #FAA545;
+    --color-terciario: #FA8745;
+    --color-cuaternario: #F54945;
+    --color-quinto: #F5BD45;
+    --color-texto: #333;
+    --color-fondo: #FFF9F0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.confirmation-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-primario); /* Color primario para el título */
+}
+
+p {
+    color: var(--color-texto); /* Color de texto */
+}
+
+.back-link {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secundario); /* Color secundario para el enlace */
+}
+
+a:hover {
+    color: var(--color-terciario); /* Color terciario al pasar el ratón sobre el enlace */
+    text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+}
